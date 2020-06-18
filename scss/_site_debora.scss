@@ -1,0 +1,336 @@
+.leadmenor{
+  font-size: 1.2rem;
+}
+
+.btn-principal {
+    background-color: #FFC98B;
+    padding: 5px 15px;
+    height: 35px;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+
+
+    &:hover {
+    background-color: rgb(240, 233, 190);
+  }
+}
+
+.img-bg {
+  background-image: url(../img/banners/banner0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border-top::before {
+  content: '';
+  width: 25px;
+  border-bottom: 2px solid theme-color("grey");
+  position: absolute;
+  top: -8px;
+}
+
+.bg-objetivos {
+  background-color: theme-color("gold");
+}
+
+.txt-objetivos {
+  color: theme-color("orange");
+}
+
+.bg-skills {
+  background-image: url("../img/banners/banner2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-cores-skills {
+  background-color: white;
+  opacity: 0.9;
+}
+
+.fa-star {
+  color: theme-color("pink");
+}
+
+.elemento-vetorial {
+  background-image: url("../img/paths/path1.png"), url("../img/paths/path4.png");
+  // background-size: cover;
+  background-position: left top, right top;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.florenscer {
+  background-image: url("../img/trabalhos/appflo.png");
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.btn-flo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: #736696;
+  padding: 25px 20px;
+  height: 35px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+  color: white;
+
+  &:hover {
+  background-color: #8678ad;
+}
+
+  a {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #eae3ff;
+  }
+}
+
+.arrow {
+  margin-left: 6px;
+  border: solid theme-color("orange");
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.wrapper {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+$size-flo: calc(100vw / 4);
+
+.portfolio-item {
+  width: $size-flo;
+  height: $size-flo;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    position: absolute;
+    top: -30%;
+    left: -30%;
+    transition: all ease-in-out 0.9s;
+  }
+
+
+  img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+
+// form 
+
+.rodape {
+    background-color: #C2E865;
+    height: max-content;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rodape-container {
+    padding: 80px 150px 0px;
+    margin: 0 auto;
+    display: flex;
+    align-content: flex-start;
+}
+
+.rodape-texto {
+    position: relative;
+}
+
+.coluna-esq {
+    display: flex;
+    flex-direction: column;
+    // align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.texto-gg {
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -3px;
+    font-size: 4rem;
+    color: $grey;
+    text-align: right;
+}
+
+.texto-gg-ultima {
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: -3px;
+    font-size: 4rem;
+    color: $grey;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.linha-rodape {
+    border-top: 1px solid $grey;
+    width: 32px;
+    float: right;
+    margin: 20px 0px 20px 0px;
+}
+
+.texto-menor {
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .85rem;
+    line-height: 1rem;
+    text-align: right;
+    color: $grey;
+}
+
+.icones-redes {
+    margin-top: 10px;
+    display: flex;
+    width: 50px;
+    justify-content: flex-end;
+    text-align: right;
+    float: right;
+    position: relative;
+    margin-bottom: 30px;
+
+    i, a {
+        font-size: 1.1rem;
+        margin-left: 10px;
+        color: $grey;
+    }
+}
+
+.rodape-form {
+    margin-left: 40px;
+}
+
+.campo-nome input{
+    width: 500px;
+    height: 30px;
+    font-size: 20px;    
+    background: $light-light-green;
+    font-size: 1rem;
+    padding: 5px;
+    border: 0px;
+    margin-bottom: 10px;
+    
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    color: $grey;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.campo-email input{
+    width: 500px;
+    height: 30px;
+    font-size: 20px;  
+    background: $light-light-green;
+    font-size: 1rem;
+    padding: 5px;
+    border: 0px;
+    margin-bottom: 10px;
+
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    color: $grey;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.campo-mensagem {
+    position: relative;
+}
+
+.campo-mensagem textarea {
+    width: 500px;
+    height: 300px;
+    font-size: 20px;  
+    background: $light-light-green;
+    font-size: 1rem;
+    padding: 5px;
+    border: 0px;
+    margin-bottom: 10px;    
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    color: $grey;
+    text-align: left;
+    text-transform: uppercase;
+    align-self: flex-start;
+    resize: none;
+}
+
+// .campo-mensagem textarea::placeholder {
+//     font-family: "Barlow", Arial, Helvetica, sans-serif;
+//     font-weight: 300;
+//     font-size: .8rem;
+//     color: ##4A4A4A;
+//     text-align: left;
+//     text-transform: uppercase;
+// }
+
+
+.button input{
+    opacity: 80%;
+    padding: 5px 15px;
+    font-size: .8rem;
+    width: max-content;
+    height: 30px;
+    cursor: pointer;
+    border: 0px;
+    background-color: $green;
+    color: $grey;
+}
+
+.button {
+    text-align: right;
+}
+
+.rodape-direitos-reserv {
+    margin: 20px 0 25px 0;
+    height: max-content;
+    align-self: flex-end;
+
+    p {
+        font-family: "Barlow", Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        font-size: .8rem;
+        color: $light-grey;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+    }
+}
+
+
