@@ -8,7 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./scss/bootstrap.css">
-  <link rel="stylesheet" href="./scss/lightbox.css">
+  <link href="./scss/lightbox.css" rel="stylesheet" />
+
 
   <link rel="icon" href="./img/icons/debora-icon.png" sizes="32x32">
 
@@ -64,7 +65,7 @@
           <div class="col-lg-3 mt-5">
             <span class="border-top">
               <p class="leadmenor mb-0 font-weight-bold">WhatsApp:</p>
-              <p class="leadmenor">(41) 99165-1074</p>
+              <p class="leadmenor">(41) 98856-0011</p>
             </span>
           </div>
           <div class="col-lg-3 mt-5">
@@ -378,7 +379,7 @@
         <img src="./img/logos/flo.png" class="mx-auto" style="height:90px">
         <a href="https://medium.com/@pinheiroalves.debora/florenscer-estudo-de-caso-de-ux-design-f2791bbfecd5"
           target="_blank">
-          <button class="btn-flo">
+          <button class="btn-flo d-flex mx-auto">
             Conheça o processo de UX/UI
             <i class="arrow right"></i>
           </button>
@@ -483,8 +484,8 @@
             <p class="h6">pinheiroalves.debora@gmail.com</p>
           </a>
 
-          <a href="https://bit.ly/medaumalo" target="blank" style="color: #4A4A4A">
-            <p class="h6">(41) 99165-1074</p>
+          <a href="http://bit.ly/medeumalo" target="blank" style="color: #4A4A4A">
+            <p class="h6">(41) 98856-0011</p>
           </a>
 
           <ul class="list-inline">
@@ -505,47 +506,33 @@
 
 
         </div>
-        <!-- 
+
+
+
         <div class="col-md-6 justify-content-right offset-md-1 ml-3">
           <div class="form-group" name="portfolio" action="/submission.html" netlify>
-            <label for="exampleFormControlInput1">E-mail*</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" required>
+            <label for="exampleFormControlInput1">Nome*</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" required>
+          </div>
+
+          <div class="form-group" name="portfolio" action="/submission.html" netlify>
+            <label for="exampleFormControlInput2">E-mail*</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" required>
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensagem</label>
+            <label for="exampleFormControlTextarea1">Mensagem*</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" required></textarea>
           </div>
-          <button input type="submit" value="ENVIAR" class="btn btn-principal">Enviar</button>
-
-        </div> -->
-
-
-        <div class="rodape-form">
-          <form name="portfolio" action="/submission.html" netlify>
-
-            <div class="campo-nome">
-              <input name="name" type="text" title="Digite seu nome completo" required placeholder="NOME" />
-            </div>
-
-            <div class="campo-email">
-              <input name="email" type="email" title="Digite um email válido" required placeholder="E-MAIL" />
-            </div>
-
-            <div class="campo-mensagem">
-              <textarea rows="1" cols="50" placeholder="MENSAGEM" name="mensagem" title="Digite sua mensagem"
-                required></textarea>
-            </div>
-
-            <p class="button">
-              <input type="submit" value="ENVIAR" />
-            </p>
-          </form>
+          <button input type="submit" value="ENVIAR" class="btn btn-principal ml-0">Enviar</button>
         </div>
+
       </div>
     </div>
 
   </section>
+
+
   <!-- 
     <div class="col-md-6">
       <form name="portfolio" action="/submission.html" netlify>
@@ -593,8 +580,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="./js/lightbox.js"></script>
-  <script type="text/javascript" src="./js/lightbox.js"></script>
+  <script src="./js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>

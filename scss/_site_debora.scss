@@ -27,7 +27,7 @@
 .border-top::before {
   content: '';
   width: 25px;
-  border-bottom: 2px solid theme-color("grey");
+  border-bottom: 2px solid theme-color("gray-900");
   position: absolute;
   top: -8px;
 }
@@ -120,21 +120,25 @@
   overflow: hidden;
 }
 
-$size-flo: calc(100vw / 4);
+$width-flo: calc(100vw / 4);
+$height-flo: calc(100vh / 2);
+
 
 .portfolio-item {
-  width: $size-flo;
-  height: $size-flo;
+  width: $width-flo;
+  height: $height-flo;
   overflow: hidden;
   position: relative;
 
   img {
     object-fit: cover;
     position: absolute;
+    display: block;
+    width: 300%;
     top: -30%;
-    left: -30%;
+    left: -50%;
     transition: all ease-in-out 0.9s;
-  }
+    }
 
 
   img:hover {
@@ -180,7 +184,7 @@ $size-flo: calc(100vw / 4);
     line-height: 3rem;
     letter-spacing: -3px;
     font-size: 4rem;
-    color: $grey;
+    // color: $gray-900;
     text-align: right;
 }
 
@@ -190,13 +194,13 @@ $size-flo: calc(100vw / 4);
     line-height: 3rem;
     letter-spacing: -3px;
     font-size: 4rem;
-    color: $grey;
+    // color: $gray-900;
     text-align: right;
     margin-bottom: 20px;
 }
 
 .linha-rodape {
-    border-top: 1px solid $grey;
+    border-top: 1px solid $gray-900;
     width: 32px;
     float: right;
     margin: 20px 0px 20px 0px;
@@ -208,7 +212,7 @@ $size-flo: calc(100vw / 4);
     font-size: .85rem;
     line-height: 1rem;
     text-align: right;
-    color: $grey;
+    // color: $gray-900;
 }
 
 .icones-redes {
@@ -224,7 +228,7 @@ $size-flo: calc(100vw / 4);
     i, a {
         font-size: 1.1rem;
         margin-left: 10px;
-        color: $grey;
+        // color: $gray-900;
     }
 }
 
@@ -236,7 +240,6 @@ $size-flo: calc(100vw / 4);
     width: 500px;
     height: 30px;
     font-size: 20px;    
-    background: $light-light-green;
     font-size: 1rem;
     padding: 5px;
     border: 0px;
@@ -245,7 +248,7 @@ $size-flo: calc(100vw / 4);
     font-family: "Barlow", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: .8rem;
-    color: $grey;
+    // color: $gray-900;
     text-align: left;
     text-transform: uppercase;
 }
@@ -254,7 +257,6 @@ $size-flo: calc(100vw / 4);
     width: 500px;
     height: 30px;
     font-size: 20px;  
-    background: $light-light-green;
     font-size: 1rem;
     padding: 5px;
     border: 0px;
@@ -263,7 +265,7 @@ $size-flo: calc(100vw / 4);
     font-family: "Barlow", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: .8rem;
-    color: $grey;
+    // color: $gray-900;
     text-align: left;
     text-transform: uppercase;
 }
@@ -276,7 +278,6 @@ $size-flo: calc(100vw / 4);
     width: 500px;
     height: 300px;
     font-size: 20px;  
-    background: $light-light-green;
     font-size: 1rem;
     padding: 5px;
     border: 0px;
@@ -284,7 +285,7 @@ $size-flo: calc(100vw / 4);
     font-family: "Barlow", Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: .8rem;
-    color: $grey;
+    // color: $gray-900;
     text-align: left;
     text-transform: uppercase;
     align-self: flex-start;
@@ -309,8 +310,7 @@ $size-flo: calc(100vw / 4);
     height: 30px;
     cursor: pointer;
     border: 0px;
-    background-color: $green;
-    color: $grey;
+    // color: $gray-900;
 }
 
 .button {
@@ -326,7 +326,6 @@ $size-flo: calc(100vw / 4);
         font-family: "Barlow", Arial, Helvetica, sans-serif;
         font-weight: 300;
         font-size: .8rem;
-        color: $light-grey;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 6px;

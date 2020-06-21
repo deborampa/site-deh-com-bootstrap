@@ -11610,7 +11610,7 @@ a.text-pink:hover, a.text-pink:focus {
 
 .portfolio-item {
   width: calc(100vw / 4);
-  height: calc(100vw / 4);
+  height: calc(100vh / 2);
   overflow: hidden;
   position: relative;
 }
@@ -11619,8 +11619,10 @@ a.text-pink:hover, a.text-pink:focus {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
+  display: block;
+  width: 300%;
   top: -30%;
-  left: -30%;
+  left: -50%;
   -webkit-transition: all ease-in-out 0.9s;
   transition: all ease-in-out 0.9s;
 }
@@ -11629,5 +11631,195 @@ a.text-pink:hover, a.text-pink:focus {
   opacity: 0.5;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.rodape {
+  background-color: #C2E865;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rodape-container {
+  padding: 80px 150px 0px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.rodape-texto {
+  position: relative;
+}
+
+.coluna-esq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.texto-gg {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -3px;
+  font-size: 4rem;
+  text-align: right;
+}
+
+.texto-gg-ultima {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 3rem;
+  letter-spacing: -3px;
+  font-size: 4rem;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.linha-rodape {
+  border-top: 1px solid #4A4A4A;
+  width: 32px;
+  float: right;
+  margin: 20px 0px 20px 0px;
+}
+
+.texto-menor {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .85rem;
+  line-height: 1rem;
+  text-align: right;
+}
+
+.icones-redes {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  float: right;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.icones-redes i, .icones-redes a {
+  font-size: 1.1rem;
+  margin-left: 10px;
+}
+
+.rodape-form {
+  margin-left: 40px;
+}
+
+.campo-nome input {
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 0px;
+  margin-bottom: 10px;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .8rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.campo-email input {
+  width: 500px;
+  height: 30px;
+  font-size: 20px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 0px;
+  margin-bottom: 10px;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .8rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.campo-mensagem {
+  position: relative;
+}
+
+.campo-mensagem textarea {
+  width: 500px;
+  height: 300px;
+  font-size: 20px;
+  font-size: 1rem;
+  padding: 5px;
+  border: 0px;
+  margin-bottom: 10px;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .8rem;
+  text-align: left;
+  text-transform: uppercase;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  resize: none;
+}
+
+.button input {
+  opacity: 80%;
+  padding: 5px 15px;
+  font-size: .8rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 30px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.button {
+  text-align: right;
+}
+
+.rodape-direitos-reserv {
+  margin: 20px 0 25px 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.rodape-direitos-reserv p {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: .8rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
