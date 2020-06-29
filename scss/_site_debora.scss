@@ -56,12 +56,18 @@
 }
 
 .elemento-vetorial {
-  background-image: url("../img/paths/path1.png"), url("../img/paths/path4.png");
-  // background-size: cover;
-  background-position: left top, right top;
+  background-image: url("../img/paths/path4.png");
+  background-position: top right -50%;
   background-repeat: no-repeat;
-  
-  
+  position: relative;
+}
+
+.elemento-vetorial::before {
+    content: url(../img//paths/path2.png);
+    position: absolute;
+    top: -235px;
+    transform: scaleY(1) scaleX(-1) rotateZ(-90deg);
+    left: -15rem;
 }
 
 .florenscer {
@@ -76,8 +82,8 @@
   display: flex;
   align-items: center;
   background-color: #736696;
-  padding: 25px 20px;
-  height: 35px;
+  padding: 15px 15px;
+  max-height: auto;
   border: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 15px;
@@ -292,16 +298,6 @@ $height-flo: calc(100vh / 2);
     resize: none;
 }
 
-// .campo-mensagem textarea::placeholder {
-//     font-family: "Barlow", Arial, Helvetica, sans-serif;
-//     font-weight: 300;
-//     font-size: .8rem;
-//     color: ##4A4A4A;
-//     text-align: left;
-//     text-transform: uppercase;
-// }
-
-
 .button input{
     opacity: 80%;
     padding: 5px 15px;
@@ -332,4 +328,237 @@ $height-flo: calc(100vh / 2);
     }
 }
 
+.form-cta {
+  position: relative;
+}
 
+.form-cta::after {
+  content: " ";
+  width: 1.3rem;
+  border-bottom: 1px solid $gray-900;
+  position: absolute;
+  bottom: -1rem;
+  right: 0;
+}
+
+
+// mobile 
+@media (min-width: 576px) {
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .display-2 {
+    font-size: 3.5rem;
+    line-height: 2.5rem;
+  }
+
+  .objetivos-bg-figure {
+    display: none;
+  }
+
+  .centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .lifelong-texto p {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+  .navbar {
+    margin: 0 auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  .subtitulo {
+    font-size: 1.9rem;
+  }
+
+  .elemento-vetorial {
+      background-size: 50%;
+      background-position: top right -60%;
+  }
+
+  .elemento-vetorial::before {
+      top: -12.8rem;
+      left: -36%;
+      transform: scaleY(0.5) scaleX(-0.5) rotateZ(-90deg)
+    }
+
+    .elemento-vetorial::before {
+      content: " ";
+    }
+}
+
+// tablet 
+@media (max-width: 768px) {
+    .nome-deh {
+    font-size: 3rem;
+  }
+
+  .objetivos-bg-figure {
+    display: none;
+  }
+
+  .centralizar-tablet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .center-vamos {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+   a {
+    #sumir-email {
+      font-size: 0.8rem;
+    }
+  }
+
+} 
+
+
+// mobile L 
+@media (max-width: 425px) {
+.lifelong-texto p {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+   a {
+    #sumir-email {
+      font-size: 0.8rem;
+    }
+  }
+
+  .nome-deh {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .objetivos-bg-figure {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+
+  .elemento-vetorial {
+    display: none;
+  }
+
+
+  .lll {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+}
+
+
+
+
+// mobile M 
+@media (max-width: 375px) {
+.lifelong-texto p {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+  }
+
+   a {
+    #sumir-email {
+      font-size: 0.8rem;
+    }
+  }
+
+  .nome-deh {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .objetivos-bg-figure {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+
+  .elemento-vetorial {
+    display: none;
+  }
+
+
+  .lll {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+}
+
+
+// mobile S 
+@media (max-width: 320px) {
+   .lifelong-texto p {
+    
+    max-width: 100%;
+  }
+
+  
+
+   a {
+    #sumir-email {
+      font-size: 0.8rem;
+    }
+  }
+
+  .nome-deh {
+    font-size: 3.5rem;
+    line-height: 3rem;
+  }
+
+  .objetivos-bg-figure {
+    display: none;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+
+  .elemento-vetorial {
+    display: none;
+  }
+
+  .lll {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
+  
+
+}
